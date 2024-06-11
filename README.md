@@ -66,21 +66,21 @@ pip install numpy cupy pandas matplotlib scikit-learn tqdm
 ```bash
 EPOCHS = 100                  # 訓練的總週期數
 
-BATCH\_SIZE = 64               # 每批訓練樣本數
+BATCH_SIZE = 64               # 每批訓練樣本數
 
-NUM\_SAMPLES = 16384           # 總樣本數
+NUM_SAMPLES = 16384           # 總樣本數
 
-LEARNING\_RATE = 0.001         # 學習率
+LEARNING_RATE = 0.001         # 學習率
 
-MIN\_RANGE = 1                 # 隱藏層神經元數量的最小值
+MIN_RANGE = 1                 # 隱藏層神經元數量的最小值
 
-MAX\_RANGE = 20                # 隱藏層神經元數量的最大值
+MAX_RANGE = 20                # 隱藏層神經元數量的最大值
 
-HIDDEN\_SIZES = range(MIN\_RANGE, MAX\_RANGE + 1)  # 隱藏層神經元數量範圍
+HIDDEN_SIZES = range(MIN_RANGE, MAX_RANGE + 1)  # 隱藏層神經元數量範圍
 
 ROUNDS = 30                   # 每個隱藏層神經元數量的訓練回合數
 
-PATIENCE = int(EPOCHS \* 0.1)  # 提早停止的耐心值
+PATIENCE = int(EPOCHS * 0.1)  # 提早停止的耐心值
 ```
 ## 主要函數和類
 
@@ -92,9 +92,9 @@ PATIENCE = int(EPOCHS \* 0.1)  # 提早停止的耐心值
 
 此類實現一個具有一個隱藏層的淺層神經網絡。主要方法包括：
 
-`\_\_init\_\_(self, input\_size, hidden\_size, output\_size, learning\_rate=0.01, init\_method='xavier')`：初始化網絡。
+`__init__(self, input_size, hidden_size, output_size, learning_rate=0.01, init_method='xavier')`：初始化網絡。
 
-`initialize\_weights(self, method)`：使用指定方法（Xavier或He）初始化權重。
+`initialize_weights(self, method)`：使用指定方法（Xavier或He）初始化權重。
 
 `forward(self, x)`：執行前向傳播。
 
@@ -102,7 +102,7 @@ PATIENCE = int(EPOCHS \* 0.1)  # 提早停止的耐心值
 
 `backward(self, x, y)`：執行反向傳播並更新權重。
 
-`train(self, X, y, X\_val, y\_val, epochs=1, batch\_size=1024, patience=10)`：使用提供的數據集訓練模型。
+`train(self, X, y, X_val, y_val, epochs=1, batch_size=1024, patience=10)`：使用提供的數據集訓練模型。
 
 Config
 
