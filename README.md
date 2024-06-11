@@ -104,7 +104,7 @@ PATIENCE = int(EPOCHS * 0.1)  # 提早停止的耐心值
 
 `train(self, X, y, X_val, y_val, epochs=1, batch_size=1024, patience=10)`：使用提供的數據集訓練模型。
 
-Config
+`Config`
 
 保存訓練過程超參數的配置類。
 
