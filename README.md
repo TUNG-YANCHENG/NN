@@ -4,7 +4,7 @@
 
 ## 專案結構
 
-.
+```
 ├── Actual vs Predicted Values with Best Hidden Layer Size.png # 使用最佳隱藏層大小的實際值與預測值的散點圖
 ├── best_train_model.npz # 保存的最佳訓練模型
 ├── best_val_model.npz # 保存的最佳驗證模型
@@ -22,7 +22,7 @@
 ├── scaler_x1_scale.npy # 標準化縮放器的縮放值（特徵x1）
 ├── test_model.ipynb # 測試模型的 Jupyter Notebook
 └── XOR_train.py # 訓練模型的 Python 腳本
-
+```
 
 ## 需求
 
