@@ -38,7 +38,7 @@
 
 ```bash
 pip install numpy cupy pandas matplotlib scikit-learn tqdm
-
+```
 
 ## 使用方法
 
