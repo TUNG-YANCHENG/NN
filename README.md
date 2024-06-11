@@ -58,12 +58,12 @@ pip install numpy cupy pandas matplotlib scikit-learn tqdm
 
 生成的可視化圖有助於理解模型的性能以及不同隱藏層大小對均方誤差的影響。
 
-##超參數配置
+## 超參數配置
 
 超參數配置存儲在Config類中。以下是主要的超參數及其說明：
 
-class Config:
-
+- class Config:
+```bash
 EPOCHS = 100                  # 訓練的總週期數
 
 BATCH\_SIZE = 64               # 每批訓練樣本數
@@ -81,7 +81,7 @@ HIDDEN\_SIZES = range(MIN\_RANGE, MAX\_RANGE + 1)  # 隱藏層神經元數量範
 ROUNDS = 30                   # 每個隱藏層神經元數量的訓練回合數
 
 PATIENCE = int(EPOCHS \* 0.1)  # 提早停止的耐心值
-
+```
 ## 主要函數和類
 
 `generate\_data(num\_samples=10000)`
